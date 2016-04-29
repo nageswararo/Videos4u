@@ -14,7 +14,7 @@ angular.module('video4u.controllers', [])
                 $http.get('https://www.googleapis.com/youtube/v3/playlistItems', {params:$scope.youtubeParams}).success(function(response){
                      //console.log(response);
                   angular.forEach(response.items, function(child){
-                    // console.log (child);
+                     console.log (child);
                      //console.log(child.snippet.resourceId.videoId);
                      $scope.videos.push(child);
 
@@ -46,7 +46,7 @@ angular.module('video4u.controllers', [])
                 $http.get('https://www.googleapis.com/youtube/v3/playlistItems', {params:$scope.youtubeParams}).success(function(response){
                      //console.log(response);
                   angular.forEach(response.items, function(child){
-                    // console.log (child);
+                     console.log (child);
                      //console.log(child.snippet.resourceId.videoId);
                      $scope.videos.push(child);
 
